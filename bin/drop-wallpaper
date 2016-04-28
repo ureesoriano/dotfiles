@@ -1,4 +1,0 @@
-#!/bin/bash
-
-rm "$(readlink ~/.wallpaper)"
-set-wallpaper -r
