@@ -2,11 +2,12 @@
 execute pathogen#infect()
 
 " show line numbers
-set number
+set relativenumber
 
 " syntax highlighting
 syntax on
 set bg=dark
+colorscheme kraihlight
 
 " autoindent
 set autoindent
@@ -53,6 +54,12 @@ map <c-w> :tabclose<Enter>
 map <F7> :tabp<Enter>
 map <F8> :tabn<Enter>
 
+" convenience mappings
+nmap ñ :
+nmap º <esc>
+vmap º <esc>
+imap º <esc>
+
 " HATE stumbling into 'Q' instead of ':q'
 map Q :q
 
@@ -85,5 +92,15 @@ let perl_extended_vars = 1
 "autocmd FileType perl set makeprg=perl\ -c\ %\ $*
 "autocmd FileType perl set errorformat=%f:%l:%m
 "autocmd FileType perl set autowrite
+
+" habits, habits: disable arrow keys in normal & insertion modes
+nmap <up> <nop>
+imap <up> <nop>
+nmap <down> <nop>
+imap <down> <nop>
+nmap <left> <nop>
+imap <left> <nop>
+nmap <right> <nop>
+imap <right> <nop>
 
 
