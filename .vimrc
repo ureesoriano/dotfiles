@@ -75,6 +75,20 @@ set laststatus=2
 " Use 256 colors
 set t_Co=256
 
+" CtrlP config
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+"let g:ctrlp_working_path_mode = 'ra' " DAMN YOU SVN!
+let g:ctrlp_working_path_mode = 0
+" jump to file if already open
+let g:ctrlp_switch_buffer = 'Et'
+" open new file in a tab right after the current one
+let g:ctrlp_tabpage_position = 'ac'
+" open new files in a tab
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': ['<c-t>'],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
+
 " reopen file at last-edited position
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
