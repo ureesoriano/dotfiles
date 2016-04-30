@@ -54,6 +54,12 @@ map <c-w> :tabclose<Enter>
 map <F7> :tabp<Enter>
 map <F8> :tabn<Enter>
 
+" ease window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
 " convenience mappings
 nmap ñ :
 nmap º <esc>
