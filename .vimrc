@@ -86,6 +86,8 @@ set t_Co=256
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 "let g:ctrlp_working_path_mode = 'ra' " DAMN YOU SVN!
 let g:ctrlp_working_path_mode = 0
+" override max files default
+let g:ctrlp_max_files=0
 " jump to file if already open
 let g:ctrlp_switch_buffer = 'Et'
 " open new file in a tab right after the current one
