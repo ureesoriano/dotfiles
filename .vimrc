@@ -2,6 +2,7 @@
 execute pathogen#infect()
 
 " show line numbers
+set number
 set relativenumber
 
 " syntax highlighting
