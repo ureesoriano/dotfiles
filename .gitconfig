@@ -1,21 +1,12 @@
-[core]
-    editor = /usr/bin/vim
-[push]
-    default = simple
 [user]
-    name = Miquel Ruiz
-    email = mruiz@cpan.org
-[color]
-    ui = always
-    status = always
-[github]
-    user = miquelruiz
-    token =
+	name = Oriol Soriano
+	email = oriol.soriano@capside.com
 [alias]
+	st = status -sb
+	co = checkout
     ci = commit
-    co = checkout
-    st = status
     df = diff
-    br = branch
-    idx = diff --cached
-    sl = log --graph --oneline --decorate --all
+    glo = log --graph --oneline --decorate --all
+    gloo = log --graph --abbrev-commit --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+[color]
+	ui = true
