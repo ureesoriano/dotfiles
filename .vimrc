@@ -14,6 +14,9 @@ colorscheme kraihlight
 set autoindent
 set smartindent
 
+" Keep 3 lines below and above the cursor
+set scrolloff=3
+
 " 4 space tabs
 set tabstop=4
 set shiftwidth=4
