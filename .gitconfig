@@ -1,6 +1,8 @@
 [user]
 	name = Oriol Soriano
 	email = oriol.soriano@capside.com
+[core]
+    excludesfile = ~/.gitignore
 [alias]
 	st = status -sb
 	co = checkout

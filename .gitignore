@@ -1,0 +1,10 @@
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
