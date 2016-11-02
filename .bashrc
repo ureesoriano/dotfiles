@@ -86,6 +86,13 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# Git aware promt
+PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w$(__git_ps1 " (%s)")\$ '
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUPSTREAM="auto"
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWCOLORHINTS=1
+
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
@@ -102,9 +109,5 @@ if [ -d ~/bin ]; then
     export PATH=~/bin:$PATH
 fi
 
-export GIT_PS1_SHOWCOLORHINTS=1
-. /usr/share/git/completion/git-prompt.sh
-
 set -o vi
-export GIT_PS1_SHOWDIRTYSTATE=1
 export EDITOR=/usr/bin/vim
