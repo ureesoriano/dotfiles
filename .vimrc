@@ -18,10 +18,10 @@ set smartindent
 set scrolloff=3
 
 " 4 space tabs
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
-set softtabstop=4
+set softtabstop=2
 
 " incremental search, case insensitive when using lower
 set incsearch
