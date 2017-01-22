@@ -164,3 +164,11 @@ imap <right> <nop>
 " Tidy selected lines (or entire file) with _t:
 nnoremap <silent> _t :%!perltidy -q<Enter>
 vnoremap <silent> _t :!perltidy -q<Enter>
+
+" Restore EasyMotion config to be triggered by leader
+"map <Leader> <Plug>(easymotion-prefix)
+map ç <Plug>(easymotion-prefix)
+
+" Leader more accessible
+let mapleader = "ç"
+
