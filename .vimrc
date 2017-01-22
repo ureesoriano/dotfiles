@@ -157,3 +157,6 @@ nmap <right> <nop>
 imap <right> <nop>
 
 
+" Tidy selected lines (or entire file) with _t:
+nnoremap <silent> _t :%!perltidy -q<Enter>
+vnoremap <silent> _t :!perltidy -q<Enter>
