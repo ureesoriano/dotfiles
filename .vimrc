@@ -28,6 +28,11 @@ set incsearch
 set ignorecase
 set smartcase
 
+" highlight search matches
+" ... and clear search hl with 'esc'
+set hlsearch
+nnoremap <F1> :nohl<Enter>
+
 " show matching brackets
 set showmatch
 
