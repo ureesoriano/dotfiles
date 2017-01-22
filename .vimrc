@@ -48,6 +48,9 @@ nmap <s-tab> ^i<bs><esc>
 " make s-tab in insert mode unident code
 imap <s-tab> <bs>
 
+" open vsplits on the right
+set splitright
+
 " comment/uncomment blocks of code in vmode
 vmap _c :s/^/#/gi<Enter>
 vmap _C :s/^#//gi<Enter>
