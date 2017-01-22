@@ -60,6 +60,13 @@ map <c-t> :tabnew<Enter>
 map <c-w> :tabclose<Enter>
 map <F7> :tabp<Enter>
 map <F8> :tabn<Enter>
+nnoremap <s-h> :tabp<Enter>
+nnoremap <s-l> :tabn<Enter>
+
+
+" tab relocation
+nnoremap <s-j> :execute 'tabmove' tabpagenr() - 2 <CR>
+nnoremap <s-k> :execute 'tabmove' tabpagenr() <CR>
 
 " ease window navigation
 nnoremap <C-h> <C-w>h
