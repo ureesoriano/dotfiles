@@ -111,6 +111,23 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
 
+" NerdTree config
+map <C-n> :NERDTreeToggle<CR>
+
+filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+
+"Omni menu colors
+hi Pmenu ctermfg=15 ctermbg=235 cterm=bold
+hi PmenuSel ctermfg=15 ctermbg=238 gui=bold
+
+" YouCompleteMe config
+let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_auto_trigger = 1
+
+" backspace not in vim-style
+set backspace=indent,eol,start
+
 " reopen file at last-edited position
 au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
 
