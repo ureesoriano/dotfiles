@@ -102,8 +102,7 @@ set t_Co=256
 
 " CtrlP config
 set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_working_path_mode = 'ra' " DAMN YOU SVN!
-"let g:ctrlp_working_path_mode = 0
+let g:ctrlp_working_path_mode = 'ra'
 " override max files default
 let g:ctrlp_max_files=0
 " jump to file if already open
