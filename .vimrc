@@ -169,6 +169,12 @@ vnoremap <silent> _t :!perltidy -q<Enter>
 "map <Leader> <Plug>(easymotion-prefix)
 map ç <Plug>(easymotion-prefix)
 
+" Session management
+map <F5> :mksession! ~/vim_session <cr>
+map <F6> :source ~/vim_session <cr>
+
 " Leader more accessible
 let mapleader = "ç"
 
+" Window Swap
+nnoremap <silent> çww :call WindowSwap#EasyWindowSwap()<CR>
