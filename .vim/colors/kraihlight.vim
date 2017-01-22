@@ -18,7 +18,8 @@ let colors_name = "kraihlight"
 
  
 
-hi Visual guibg=#404040 ctermbg=238
+"hi Visual guibg=#404040 ctermbg=238
+hi Visual guibg=#404040 gui=none
 
 hi Cursor guibg=#b0d0f0 ctermbg=117
 
