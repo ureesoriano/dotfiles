@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/portal/Portal_trello/database/MySQL/upgrade/78-79'
+let g:netrw_dirhist_2='/home/portal/Azure-CLI-Wrapper/lib/Azure/CLIWrapper'
+let g:netrw_dirhist_3='/home/portal/Azure-CLI-Wrapper/lib/Azure/CLIWrapper/network'
+let g:netrw_dirhist_4='/home/portal/Azure-CLI-Wrapper/lib/Azure/CLIWrapper/account'
+let g:netrw_dirhist_5='/home/portal/Azure-CLI-Wrapper/lib/Azure/CLIWrapper/network'
+let g:netrw_dirhist_6='/home/portal/Azure-CLI-Wrapper/lib/Azure/CLIWrapper/account'
