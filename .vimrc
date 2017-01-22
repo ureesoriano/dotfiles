@@ -69,10 +69,10 @@ nnoremap <s-j> :execute 'tabmove' tabpagenr() - 2 <CR>
 nnoremap <s-k> :execute 'tabmove' tabpagenr() <CR>
 
 " ease window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " convenience mappings
 nmap ñ :
