@@ -3,6 +3,7 @@
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias g='git'
 
 # weeks start on mondays and use cal format
 alias cal='ncal -MC'
