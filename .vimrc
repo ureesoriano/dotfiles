@@ -1,9 +1,22 @@
-" pathogen plugin manager
-execute pathogen#infect()
-
-" show line numbers
-set number
-set relativenumber
+" Plug plugin manager
+call plug#begin("~/.vim/plugged")
+    " Code completion for Vim
+    Plug 'Valloric/YouCompleteMe'
+    " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
+    Plug 'ctrlpvim/ctrlp.vim'
+    " File system explorer for Vim
+    Plug 'scrooloose/nerdtree'
+    " Highlight whitespace/strip it
+    Plug 'ntpeters/vim-better-whitespace'
+    " Ease navigation with vim motions
+    Plug 'easymotion/vim-easymotion'
+    " Better JSON edition
+    Plug 'elzr/vim-json'
+    " Tern-based JavaScript editing support
+    Plug 'ternjs/tern_for_vim'
+    " Better JavaScript syntax highlight
+    Plug 'pangloss/vim-javascript'
+call plug#end()
 
 " syntax highlighting
 syntax on
