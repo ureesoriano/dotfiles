@@ -138,6 +138,7 @@ let g:ctrlp_prompt_mappings = {
 
 " NerdTree config
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeMapOpenInTab='t'
 
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
