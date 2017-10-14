@@ -23,6 +23,14 @@ syntax on
 set bg=dark
 colorscheme kraihlight
 
+set encoding=utf-8
+set noswapfile      " No swap (.swp) files
+set nobackup        " No backup (~) files
+
+" show line numbers
+set number
+set relativenumber
+
 " autoindent
 set autoindent
 set smartindent
