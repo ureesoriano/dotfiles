@@ -121,3 +121,6 @@ set -o ignoreeof
 # sine qua non
 set -o vi
 export EDITOR=/usr/bin/vim
+
+# Track dotfiles with git
+alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/.git --work-tree=$HOME'
