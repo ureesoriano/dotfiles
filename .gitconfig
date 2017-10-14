@@ -4,8 +4,8 @@
 [core]
     excludesfile = ~/.gitignore
 [alias]
-	st = status -sb
-	co = checkout
+    st = status
+    co = checkout
     ci = commit
     df = diff
     br = branch
