@@ -115,5 +115,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# prevent CTRL+D to exit shell
+set -o ignoreeof
+
 set -o vi
 export EDITOR=/usr/bin/vim
