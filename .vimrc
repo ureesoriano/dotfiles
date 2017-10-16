@@ -18,6 +18,9 @@ call plug#begin("~/.vim/plugged")
     Plug 'pangloss/vim-javascript'
 call plug#end()
 
+" Tern auto-close doc window after closing YouCompleteMe suggestions
+autocmd CompleteDone * pclose
+
 " syntax highlighting
 syntax on
 set bg=dark
