@@ -69,8 +69,8 @@ set history=1000
 set undolevels=1000
 
 " make tab in v mode ident code
-vmap <tab> >gv 
-vmap <s-tab> <gv 
+vmap <tab> >gv
+vmap <s-tab> <gv
 " make tab in normal mode ident code
 nmap <tab> I<tab><esc>
 nmap <s-tab> ^i<bs><esc>
