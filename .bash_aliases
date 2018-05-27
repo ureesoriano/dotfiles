@@ -6,6 +6,7 @@ alias l='ls -CF'
 alias g='git'
 alias dc='docker-compose'
 alias d='docker'
+alias k='kubectl'
 
 # weeks start on mondays and use cal format
 alias cal='ncal -MC'
