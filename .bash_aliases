@@ -24,3 +24,6 @@ alias dmesg='dmesg -e'
 ssr() {
     ssh root@$1
 }
+
+# Track dotfiles with git
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
