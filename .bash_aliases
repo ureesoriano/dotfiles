@@ -7,6 +7,7 @@ alias g='git'
 alias dc='docker-compose'
 alias d='docker'
 alias k='kubectl'
+alias docker-purge-images='docker rmi $(docker images --quiet --filter "dangling=true")'
 
 # weeks start on mondays and use cal format
 alias cal='ncal -MC'
