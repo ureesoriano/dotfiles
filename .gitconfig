@@ -1,6 +1,6 @@
 [user]
-	name = Oriol Soriano
-	email = oriol.soriano@capside.com
+    name = Oriol Soriano
+    email = oriolsoriano@gmail.com
 [core]
     excludesfile = ~/.gitignore
 [alias]
