@@ -13,7 +13,7 @@ gsettings set org.gnome.desktop.interface icon-theme "Numix-Circle"
 
 # Install dash to dock gnome extension
 wget https://extensions.gnome.org/review/download/8355.shell-extension.zip
-unzip ./8355.shell-extension.zip\
+unzip ./8355.shell-extension.zip \
     -d ~/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/
 
 # Minimize windows when clicking its icon in the Dash
@@ -31,3 +31,10 @@ gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-shrink true
 
 # Window counter indicators -> dashes
 gsettings set org.gnome.shell.extensions.dash-to-dock running-indicator-style 'DASHES'
+
+# Install Panel OSD (AKA: move notifications) gnome extension
+wget https://extensions.gnome.org/extension-data/panel-osd@berend.de.schouwer.gmail.com.v36.shell-extension.zip
+unzip ./panel-osd@berend.de.schouwer.gmail.com.v36.shell-extension.zip \
+    -d ~/.local/share/gnome-shell/extensions/panel-osd@berend.de.schouwer.gmail.com/
+# TODO: Set notifications to top right corner, via gnome tweaks app
+# (Panel OSD extension doesn't seem to have a settings scheme)
