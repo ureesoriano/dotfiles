@@ -55,3 +55,8 @@ unzip ./hidetopbar@mathieu.bidon.ca.v63.shell-extension.zip \
 wget https://extensions.gnome.org/extension-data/Move_Clock@rmy.pobox.com.v18.shell-extension.zip
 unzip ./Move_Clock@rmy.pobox.com.v18.shell-extension.zip \
     -d ~/.local/share/gnome-shell/extensions/Move_Clock@rmy.pobox.com/
+
+# Install OpenWeather gnome extension
+wget https://extensions.gnome.org/extension-data/openweather-extension@jenslody.de.v97.shell-extension.zip
+unzip ./openweather-extension@jenslody.de.v97.shell-extension.zip \
+    -d ~/.local/share/gnome-shell/extensions/openweather-extension@jenslody.de
