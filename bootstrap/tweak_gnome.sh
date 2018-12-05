@@ -60,3 +60,8 @@ unzip ./Move_Clock@rmy.pobox.com.v18.shell-extension.zip \
 wget https://extensions.gnome.org/extension-data/openweather-extension@jenslody.de.v97.shell-extension.zip
 unzip ./openweather-extension@jenslody.de.v97.shell-extension.zip \
     -d ~/.local/share/gnome-shell/extensions/openweather-extension@jenslody.de
+
+# Install Hide Activities Button gnome extension
+wget https://extensions.gnome.org/extension-data/Hide_Activities@shay.shayel.org.v7.shell-extension.zip
+unzip ./Hide_Activities@shay.shayel.org.v7.shell-extension.zip \
+    -d ~/.local/share/gnome-shell/extensions/Hide_Activities@shay.shayel.org/
