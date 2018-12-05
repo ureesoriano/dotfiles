@@ -36,5 +36,17 @@ gsettings set org.gnome.shell.extensions.dash-to-dock running-indicator-style 'D
 wget https://extensions.gnome.org/extension-data/panel-osd@berend.de.schouwer.gmail.com.v36.shell-extension.zip
 unzip ./panel-osd@berend.de.schouwer.gmail.com.v36.shell-extension.zip \
     -d ~/.local/share/gnome-shell/extensions/panel-osd@berend.de.schouwer.gmail.com/
-# TODO: Set notifications to top right corner, via gnome tweaks app
+# TODO via gnome tweaks app:
+# * Set notifications to top right corner, via gnome tweaks app
 # (Panel OSD extension doesn't seem to have a settings scheme)
+
+# Install Hide Top Bar gnome extension
+wget https://extensions.gnome.org/extension-data/hidetopbar@mathieu.bidon.ca.v63.shell-extension.zip
+unzip ./hidetopbar@mathieu.bidon.ca.v63.shell-extension.zip \
+    -d ~/.local/share/gnome-shell/extensions/hidetopbar@mathieu.bidon.ca/
+# TODO via gnome tweaks app:
+# * 'Show panel when mouse approaches ...' ON
+# * 'Keep hot corner sensitive, even ...'  ON
+# * 'Pressure barrier's threshold' 30
+# * 'Pressure barrier's timeout' 500
+# * 'Key that triggers the bar' Pause
