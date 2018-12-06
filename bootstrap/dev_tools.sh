@@ -8,6 +8,32 @@ function install_essentials {
     curl
 }
 
+function vim_setup {
+  # Install Plug
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+  # Install kraihlight color scheme
+  mkdir ~/.vim/colors/
+  curl -L https://gist.githubusercontent.com/kraih/1711014/raw/719f65ac7d3f3886261ad6cc609560fa9cf23cdf/kraihlight.vim \
+    -o ~/.vim/colors/kraihlight.vim
+
+  # Install powerline
+  sudo apt-get install -y python3-pip
+  pip3 install powerline-status
+
+  # Fonts: D2coding font & Ubuntu mono for powerline
+  mkdir ~/.fonts
+  curl -L \
+    https://raw.githubusercontent.com/naver/d2codingfont/master/D2Coding-Ver1.3.2-20180524.zip \
+    -o d2coding.zip
+  unzip d2coding.zip -d ~/.fonts/
+  mkdir ~/.fonts/Ubuntu_mono_powerline/
+  curl -L \
+    https://raw.githubusercontent.com/powerline/fonts/master/UbuntuMono/Ubuntu%20Mono%20derivative%20Powerline.ttf \
+    -o ~/.fonts/Ubuntu_mono_powerline/Ubuntu_Mono_derivative_Powerline.ttf
+}
+
 function install_docker {
   # Allow apt to use repos over HTTPS
   sudo apt-get install -y \
@@ -44,5 +70,6 @@ function install_docker_compose {
 }
 
 install_essentials
+vim_setup
 install_docker
 install_docker_compose
