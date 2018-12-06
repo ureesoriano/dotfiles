@@ -41,10 +41,10 @@ set smartindent
 " Keep 3 lines below and above the cursor
 set scrolloff=3
 
-" 4 space tabs
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+" 2 space tabs
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 
 " incremental search, case insensitive when using lower
