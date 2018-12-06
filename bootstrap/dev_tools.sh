@@ -2,6 +2,7 @@
 
 function install_essentials {
   sudo apt-get install -y \
+    build-essential \
     git \
     vim \
     curl
