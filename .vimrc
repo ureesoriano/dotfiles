@@ -179,14 +179,14 @@ let perl_extended_vars = 1
 "autocmd FileType perl set autowrite
 
 " habits, habits: disable arrow keys in normal & insertion modes
-nmap <up> <nop>
-imap <up> <nop>
-nmap <down> <nop>
-imap <down> <nop>
-nmap <left> <nop>
-imap <left> <nop>
-nmap <right> <nop>
-imap <right> <nop>
+"nmap <up> <nop>
+"imap <up> <nop>
+"nmap <down> <nop>
+"imap <down> <nop>
+"nmap <left> <nop>
+"imap <left> <nop>
+"nmap <right> <nop>
+"imap <right> <nop>
 
 
 " Tidy selected lines (or entire file) with _t:
