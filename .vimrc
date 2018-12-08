@@ -153,6 +153,9 @@ hi PmenuSel ctermfg=15 ctermbg=238 gui=bold
 " YouCompleteMe config
 let g:ycm_min_num_of_chars_for_completion = 2
 let g:ycm_auto_trigger = 1
+" Don't show YCM's preview window
+set completeopt-=preview
+let g:ycm_add_preview_to_completeopt = 0
 
 " backspace not in vim-style
 set backspace=indent,eol,start
