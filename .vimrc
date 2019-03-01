@@ -138,6 +138,10 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
+" Ignore .git and node_modules folders
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|node_modules$',
+\ }
 
 " NerdTree config
 map <C-n> :NERDTreeToggle<CR>
