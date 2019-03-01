@@ -1,0 +1,91 @@
+{
+    "workbench.statusBar.feedback.visible": false,
+    "window.zoomLevel": -1,
+    "remote.onstartup": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "sshfs.configs": [
+        {
+            "name": "ENZiME",
+            "root": "/home/devel/src/shipper",
+            "host": "localhost",
+            "port": 2222,
+            "username": "devel",
+            "agent": "pageant"
+        },
+        {
+            "name": "replica",
+            "root": "/home/devel/src/replica",
+            "host": "localhost",
+            "port": 2222,
+            "username": "devel",
+            "agent": "pageant"
+        },
+        {
+            "name": "enzime",
+            "root": "/home/devel/src/shipper",
+            "host": "localhost",
+            "port": 2222,
+            "username": "devel",
+            "agent": "pageant"
+        }
+    ],
+    "vim.leader": "ç",
+    "vim.easymotion": true,
+    "vim.easymotionMarkerBackgroundColor": "#000000",
+    "vim.easymotionMarkerFontFamily": "Fira Code, Consolas, 'Courier New', monospace",
+    "vim.easymotionMarkerForegroundColorTwoChar": "#E80E0E",
+    "vim.easymotionMarkerForegroundColorOneChar": "#E80E0E",
+    "vim.easymotionMarkerHeight": 19,
+    "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf,.",
+    "vim.hlsearch": true,
+    "vim.handleKeys":{
+        "<C-b>": false,
+        "<C-c>": false,
+        "<C-w>": false
+    },
+    "vim.insertModeKeyBindings": [
+        { "before": ["º"], "after": ["<Esc>"] },
+        { "before": ["ñ"], "after": [":"] }
+    ],
+    "vim.normalModeKeyBindings": [
+        { "before": ["º"], "after": ["<Esc>"] },
+        { "before": ["ñ"], "after": [":"] },
+        { "before": [":", "q"], "after": ["workbench.files.action.closeFile"] },
+        { "before": ["<S-h>"], "after": ["workbench.action.previousEditor"] },
+        { "before": ["<S-l>"], "after": ["workbench.action.nextEditor"] }
+    ],
+    "vim.visualModeKeyBindings": [
+        { "before": ["º"], "after": ["<Esc>"] },
+        { "before": ["ñ"], "after": [":"] }
+    ],
+    "ycmd.enabled_languages": [
+        "cpp",
+        "c",
+        "js"
+    ],
+    "vim.statusBarColorControl": true,
+    "vim.searchHighlightColor": "rgb(231, 234, 75, 1)",
+    "breadcrumbs.enabled": true,
+    "editor.fontLigatures": true,
+    "editor.lineNumbers": "relative",
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "all",
+    "editor.fontFamily": "Fira Code, Ubuntu Mono, Hack, DejaVu, D2Coding, Consolas, 'Courier New', monospace",
+    "editor.tabSize": 2,
+    "editor.fontWeight": "500",
+    "workbench.fontAliasing": "antialiased",
+    "editor.renderIndentGuides": true,
+    "editor.renderWhitespace": "none",
+    "editor.rulers": [
+        80
+    ],
+    "editor.wordWrap": "on",
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "breadcrumbs.symbolPath": "off",
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false
+}
