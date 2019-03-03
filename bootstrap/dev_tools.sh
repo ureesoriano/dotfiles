@@ -5,7 +5,11 @@ function install_essentials {
     build-essential \
     git \
     vim \
-    curl
+    tree \
+    net-tools \
+    wine-stable \
+    curl \
+    openvpn
 }
 
 function install_node {
