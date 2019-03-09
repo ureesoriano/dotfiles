@@ -13,6 +13,7 @@
     ],
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
+    "eslint.alwaysShowStatus": true,
     "vim.easymotion": true,
     "vim.easymotionMarkerBackgroundColor": "#000000",
     "vim.easymotionMarkerFontFamily": "Fira Code, Consolas, 'Courier New', monospace",
