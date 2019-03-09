@@ -1,34 +1,6 @@
 {
     "workbench.statusBar.feedback.visible": false,
     "window.zoomLevel": -1,
-    "remote.onstartup": true,
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
-    "sshfs.configs": [
-        {
-            "name": "ENZiME",
-            "root": "/home/devel/src/shipper",
-            "host": "localhost",
-            "port": 2222,
-            "username": "devel",
-            "agent": "pageant"
-        },
-        {
-            "name": "replica",
-            "root": "/home/devel/src/replica",
-            "host": "localhost",
-            "port": 2222,
-            "username": "devel",
-            "agent": "pageant"
-        },
-        {
-            "name": "enzime",
-            "root": "/home/devel/src/shipper",
-            "host": "localhost",
-            "port": 2222,
-            "username": "devel",
-            "agent": "pageant"
-        }
-    ],
     "vim.leader": "ç",
     "vim.easymotion": true,
     "vim.easymotionMarkerBackgroundColor": "#000000",
