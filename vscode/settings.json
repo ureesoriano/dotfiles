@@ -1,7 +1,18 @@
 {
-    "workbench.statusBar.feedback.visible": false,
-    "window.zoomLevel": -1,
-    "vim.leader": "ç",
+    "breadcrumbs.enabled": true,
+    "breadcrumbs.symbolPath": "off",
+    "editor.fontLigatures": true,
+    "editor.lineNumbers": "relative",
+    "editor.fontFamily": "Hack, Fira Code, Ubuntu Mono, DejaVu, D2Coding, Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "500",
+    "editor.renderIndentGuides": true,
+    "editor.renderControlCharacters": false,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        80
+    ],
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
     "vim.easymotion": true,
     "vim.easymotionMarkerBackgroundColor": "#000000",
     "vim.easymotionMarkerFontFamily": "Fira Code, Consolas, 'Courier New', monospace",
@@ -30,34 +41,22 @@
         { "before": ["º"], "after": ["<Esc>"] },
         { "before": ["ñ"], "after": [":"] }
     ],
-    "ycmd.enabled_languages": [
-        "cpp",
-        "c",
-        "js"
-    ],
+    "vim.leader": "ç",
     "vim.statusBarColorControl": true,
     "vim.searchHighlightColor": "rgb(231, 234, 75, 1)",
-    "breadcrumbs.enabled": true,
-    "editor.fontLigatures": true,
-    "editor.lineNumbers": "relative",
-    "editor.renderControlCharacters": false,
-    "editor.renderWhitespace": "all",
-    "editor.fontFamily": "Fira Code, Ubuntu Mono, Hack, DejaVu, D2Coding, Consolas, 'Courier New', monospace",
-    "editor.tabSize": 2,
-    "editor.fontWeight": "500",
-    "workbench.fontAliasing": "antialiased",
-    "editor.renderIndentGuides": true,
-    "editor.renderWhitespace": "none",
-    "editor.rulers": [
-        80
-    ],
-    "editor.wordWrap": "on",
     "workbench.colorCustomizations": {
         "statusBar.background": "#005f5f",
         "statusBar.noFolderBackground": "#005f5f",
         "statusBar.debuggingBackground": "#005f5f"
     },
-    "breadcrumbs.symbolPath": "off",
     "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "workbench.fontAliasing": "antialiased",
+    "workbench.statusBar.feedback.visible": false,
+    "window.zoomLevel": -1,
+    "ycmd.enabled_languages": [
+        "cpp",
+        "c",
+        "js"
+    ]
 }
