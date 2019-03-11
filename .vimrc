@@ -16,6 +16,8 @@ call plug#begin("~/.vim/plugged")
     Plug 'ternjs/tern_for_vim'
     " Better JavaScript syntax highlight
     Plug 'pangloss/vim-javascript'
+    " Vuejs syntax highlight
+    Plug 'posva/vim-vue'
 call plug#end()
 
 " Tern auto-close doc window after closing YouCompleteMe suggestions
