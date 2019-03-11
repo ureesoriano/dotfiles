@@ -145,6 +145,7 @@ let g:ctrlp_custom_ignore = {
 
 " NerdTree config
 map <C-n> :NERDTreeToggle<CR>
+map <S-n> :NERDTreeFind<CR>
 let NERDTreeMapOpenInTab='t'
 
 filetype plugin on
