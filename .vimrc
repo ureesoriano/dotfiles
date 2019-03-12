@@ -142,7 +142,7 @@ let g:ctrlp_prompt_mappings = {
     \ }
 " Ignore .git and node_modules folders
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|node_modules$',
+  \ 'dir':  '\.git$\|node_modules$\|local$',
 \ }
 
 " NerdTree config
