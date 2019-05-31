@@ -209,11 +209,17 @@ vnoremap <silent> _t :!perltidy -q<Enter>
 map ç <Plug>(easymotion-prefix)
 
 " Session management
-map <F5> :mksession! ~/vim_session <cr>
-map <F6> :source ~/vim_session <cr>
+"map <F5> :mksession! ~/vim_session <cr>
+"map <F6> :source ~/vim_session <cr>
+map <F5> :mks! ~/.vim/sessions/session.vim <cr>
+map <F6> :source ~/.vim/sessions/session.vim <cr>
 
 " Leader more accessible
 let mapleader = "ç"
 
 " Window Swap
 nnoremap <silent> çww :call WindowSwap#EasyWindowSwap()<CR>
+
+" Folds
+autocmd Syntax html,javascript,json,perl setlocal foldmethod=indent
+autocmd Syntax html,javascript,json,perl normal zR
