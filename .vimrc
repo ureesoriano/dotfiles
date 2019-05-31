@@ -12,6 +12,8 @@ call plug#begin("~/.vim/plugged")
     Plug 'easymotion/vim-easymotion'
     " Better JSON edition
     Plug 'elzr/vim-json'
+    " Perl-relatex syntax and helper for Perl 5
+    Plug 'vim-perl/vim-perl', { 'for': 'perl', 'do': 'make clean carp dancer highlight-all-pragmas moose test-more try-tiny' }
     " Tern-based JavaScript editing support
     Plug 'ternjs/tern_for_vim'
     " Better JavaScript syntax highlight
