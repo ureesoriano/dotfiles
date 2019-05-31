@@ -149,7 +149,9 @@ let g:ctrlp_custom_ignore = {
 
 " NerdTree config
 map <C-n> :NERDTreeToggle<CR>
-map <S-n> :NERDTreeFind<CR>
+" Fix terminal not sending ALT
+execute "set <M-n>=\en"
+map <M-n> :NERDTreeFind<CR>
 let NERDTreeMapOpenInTab='t'
 
 filetype plugin on
