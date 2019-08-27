@@ -89,6 +89,9 @@ imap <s-tab> <bs>
 " open vsplits on the right
 set splitright
 
+" search for selected text in vmode
+vnoremap // y/<C-R>"<CR>
+
 " comment/uncomment blocks of code in vmode
 vmap _c :s/^/#/gi<Enter>
 vmap _C :s/^#//gi<Enter>
