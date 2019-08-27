@@ -69,6 +69,10 @@ hi MatchParen cterm=none ctermbg=none ctermfg=red cterm=bold
 "set list
 "set listchars=tab:,.,trail:.,extends:#,nbsp:.
 
+" prevent delays when leaving insert mode via ESC
+set timeoutlen=1000
+set ttimeoutlen=0
+
 " history & undo BIG TIME
 set history=1000
 set undolevels=1000
