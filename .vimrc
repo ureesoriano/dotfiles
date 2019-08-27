@@ -63,6 +63,7 @@ nnoremap <F1> :nohl<Enter>
 
 " show matching brackets
 set showmatch
+hi MatchParen cterm=none ctermbg=none ctermfg=red cterm=bold
 
 " show undesired blanks
 "set list
