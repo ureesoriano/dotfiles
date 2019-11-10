@@ -188,8 +188,7 @@ autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.template
 " syntax color complex things like @{${"foo"}}
 let perl_extended_vars = 1
 
-" perl subroutine signatures, biatch
-"let perl_sub_signatures = 1
+let perl_sub_signatures = 1
 "let perl_no_subprototype_error = 1
 
 " check perl code with :make
