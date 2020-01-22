@@ -18,3 +18,8 @@
     purge-branches = !sh -c 'git branch --merged | grep -v "^*" | xargs git branch -d'
 [color]
     ui = true
+[color "diff"]
+    meta = yellow
+    #frag = cyan
+    #old = red bold
+    #new = green bold
