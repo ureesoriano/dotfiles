@@ -15,5 +15,6 @@
     glo = log --graph --oneline --decorate --all
     gloo = log --graph --abbrev-commit --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
     l = log --name-status
+    purge-branches = !sh -c 'git branch --merged | grep -v "^*" | xargs git branch -d'
 [color]
     ui = true
