@@ -106,7 +106,6 @@ map <F8> :tabn<Enter>
 nnoremap <s-h> :tabp<Enter>
 nnoremap <s-l> :tabn<Enter>
 
-
 " tab relocation
 nnoremap <s-j> :execute 'tabmove' tabpagenr() - 2 <CR>
 nnoremap <s-k> :execute 'tabmove' tabpagenr() <CR>
@@ -174,6 +173,8 @@ let g:ycm_auto_trigger = 1
 " Don't show YCM's preview window
 set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 0
+nnoremap gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap gr :YcmCompleter GoToReferences<CR>
 
 " backspace not in vim-style
 set backspace=indent,eol,start
