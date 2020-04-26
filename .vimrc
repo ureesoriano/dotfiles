@@ -162,9 +162,6 @@ execute "set <M-n>=\en"
 map <M-n> :NERDTreeFind<CR>
 let NERDTreeMapOpenInTab='t'
 
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
-
 "Omni menu colors
 hi Pmenu ctermfg=15 ctermbg=235 cterm=bold
 hi PmenuSel ctermfg=15 ctermbg=238 gui=bold
@@ -185,17 +182,6 @@ au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'
 " default templates for new files
 autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.template
 
-" syntax color complex things like @{${"foo"}}
-let perl_extended_vars = 1
-
-let perl_sub_signatures = 1
-"let perl_no_subprototype_error = 1
-
-" check perl code with :make
-"autocmd FileType perl set makeprg=perl\ -c\ %\ $*
-"autocmd FileType perl set errorformat=%f:%l:%m
-"autocmd FileType perl set autowrite
-
 " habits, habits: disable arrow keys in normal & insertion modes
 "nmap <up> <nop>
 "imap <up> <nop>
@@ -206,27 +192,9 @@ let perl_sub_signatures = 1
 "nmap <right> <nop>
 "imap <right> <nop>
 
-
-" Tidy selected lines (or entire file) with _t:
-nnoremap <silent> _t :%!perltidy -q<Enter>
-vnoremap <silent> _t :!perltidy -q<Enter>
-
 " Restore EasyMotion config to be triggered by leader
 "map <Leader> <Plug>(easymotion-prefix)
 map ç <Plug>(easymotion-prefix)
 
-" Session management
-"map <F5> :mksession! ~/vim_session <cr>
-"map <F6> :source ~/vim_session <cr>
-map <F5> :mks! ~/.vim/sessions/session.vim <cr>
-map <F6> :source ~/.vim/sessions/session.vim <cr>
-
-" Leader more accessible
-let mapleader = "ç"
-
 " Window Swap
 nnoremap <silent> çww :call WindowSwap#EasyWindowSwap()<CR>
-
-" Folds
-autocmd Syntax html,javascript,json,perl setlocal foldmethod=indent
-autocmd Syntax html,javascript,json,perl normal zR
