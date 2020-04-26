@@ -193,8 +193,8 @@ autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.template
 "imap <right> <nop>
 
 " Restore EasyMotion config to be triggered by leader
-"map <Leader> <Plug>(easymotion-prefix)
 map ç <Plug>(easymotion-prefix)
+let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz,'
 
 " Window Swap
 nnoremap <silent> çww :call WindowSwap#EasyWindowSwap()<CR>
