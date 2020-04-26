@@ -16,6 +16,8 @@ call plug#begin("~/.vim/plugged")
     Plug 'pangloss/vim-javascript'
     " Vuejs syntax highlight
     Plug 'posva/vim-vue'
+    " JSX syntax highlight
+    Plug 'MaxMEllon/vim-jsx-pretty'
 call plug#end()
 
 " Tern auto-close doc window after closing YouCompleteMe suggestions
