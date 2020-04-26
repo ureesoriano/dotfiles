@@ -10,6 +10,8 @@ call plug#begin("~/.vim/plugged")
     Plug 'ntpeters/vim-better-whitespace'
     " Ease navigation with vim motions
     Plug 'easymotion/vim-easymotion'
+    " Easy window swap
+    Plug 'wesQ3/vim-windowswap'
     " Better JSON edition
     Plug 'elzr/vim-json'
     " Better JavaScript syntax highlight
