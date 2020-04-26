@@ -27,6 +27,8 @@ autocmd CompleteDone * pclose
 syntax on
 set bg=dark
 colorscheme kraihlight
+"colorscheme happy_hacking
+"colorscheme mustang
 
 set encoding=utf-8
 set noswapfile      " No swap (.swp) files
