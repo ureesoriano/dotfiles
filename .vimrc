@@ -198,3 +198,6 @@ let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz,'
 
 " Window Swap
 nnoremap <silent> çww :call WindowSwap#EasyWindowSwap()<CR>
+
+" Force usage of the old regex engine
+ set re=1
