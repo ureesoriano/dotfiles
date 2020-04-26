@@ -1,7 +1,7 @@
 " Plug plugin manager
 call plug#begin("~/.vim/plugged")
-    " Code completion for Vim
-    Plug 'Valloric/YouCompleteMe'
+    " Code completion
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
     Plug 'ctrlpvim/ctrlp.vim'
     " File system explorer for Vim
@@ -21,9 +21,6 @@ call plug#begin("~/.vim/plugged")
     " JSX syntax highlight
     Plug 'MaxMEllon/vim-jsx-pretty'
 call plug#end()
-
-" Tern auto-close doc window after closing YouCompleteMe suggestions
-autocmd CompleteDone * pclose
 
 " syntax highlighting
 syntax on
@@ -167,15 +164,6 @@ let NERDTreeMapOpenInTab='t'
 hi Pmenu ctermfg=15 ctermbg=235 cterm=bold
 hi PmenuSel ctermfg=15 ctermbg=238 gui=bold
 
-" YouCompleteMe config
-let g:ycm_min_num_of_chars_for_completion = 2
-let g:ycm_auto_trigger = 1
-" Don't show YCM's preview window
-set completeopt-=preview
-let g:ycm_add_preview_to_completeopt = 0
-nnoremap gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-nnoremap gr :YcmCompleter GoToReferences<CR>
-
 " backspace not in vim-style
 set backspace=indent,eol,start
 
@@ -204,3 +192,58 @@ nnoremap <silent> çww :call WindowSwap#EasyWindowSwap()<CR>
 
 " Force usage of the old regex engine
  set re=1
+
+ " CoC
+let g:coc_global_extensions = [
+  \ 'coc-snippets',
+  \ 'coc-tsserver',
+  \ 'coc-vetur',
+  \ ]
+
+" TextEdit might fail if hidden is not set.
+set hidden
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
+" position. Coc only does snippet and additional edit on confirm.
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+else
+  imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
+
+" Diagnostics
+nmap <silent> g, <Plug>(coc-diagnostic-prev)
+nmap <silent> g. <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gb <C-o>
+
+" Refactor: Symbol renaming
+nmap <F2> <Plug>(coc-rename)
