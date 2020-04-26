@@ -12,8 +12,6 @@ call plug#begin("~/.vim/plugged")
     Plug 'easymotion/vim-easymotion'
     " Better JSON edition
     Plug 'elzr/vim-json'
-    " Tern-based JavaScript editing support
-    Plug 'ternjs/tern_for_vim'
     " Better JavaScript syntax highlight
     Plug 'pangloss/vim-javascript'
     " Vuejs syntax highlight
