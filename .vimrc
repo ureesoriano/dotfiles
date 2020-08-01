@@ -20,6 +20,8 @@ call plug#begin("~/.vim/plugged")
     Plug 'posva/vim-vue'
     " JSX syntax highlight
     Plug 'MaxMEllon/vim-jsx-pretty'
+    " Go development plugin
+    Plug 'fatih/vim-go'
 call plug#end()
 
 " syntax highlighting
