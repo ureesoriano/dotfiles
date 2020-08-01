@@ -198,6 +198,8 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-tsserver',
   \ 'coc-vetur',
+  \ 'coc-json',
+  \ 'coc-yaml',
   \ ]
 
 " TextEdit might fail if hidden is not set.
