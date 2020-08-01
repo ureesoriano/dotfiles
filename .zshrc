@@ -14,6 +14,10 @@
 # Remove older command from the history if a duplicate is to be added.
 setopt HIST_IGNORE_ALL_DUPS
 
+# Prevent sharing history between currently open terminals
+setopt no_share_history
+unsetopt share_history
+
 #
 # Input/output
 #
