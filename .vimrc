@@ -118,6 +118,7 @@ nnoremap <C-H> <C-W><C-H>
 
 " convenience mappings
 nmap ñ :
+imap ñ ;
 nmap º <esc>
 vmap º <esc>
 imap º <esc>
