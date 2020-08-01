@@ -6,6 +6,7 @@ call plug#begin("~/.vim/plugged")
     Plug 'ctrlpvim/ctrlp.vim'
     " File system explorer for Vim
     Plug 'scrooloose/nerdtree'
+    Plug 'ryanoasis/vim-devicons'
     " Highlight whitespace/strip it
     Plug 'ntpeters/vim-better-whitespace'
     " Ease navigation with vim motions
