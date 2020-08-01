@@ -124,3 +124,14 @@ export EDITOR=/usr/bin/vim
 
 # Track dotfiles with git
 alias dotfiles='/usr/bin/git --git-dir=$HOME/dotfiles/.git --work-tree=$HOME'
+
+# git completion for alias
+if [ -f ~/dotfiles/git-completion.bash ]; then
+  . ~/dotfiles/git-completion.bash
+
+  __git_complete g __git_main
+fi
+
+alias g="git"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
