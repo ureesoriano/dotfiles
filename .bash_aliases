@@ -9,6 +9,10 @@ alias d='docker'
 alias k='kubectl'
 alias docker-purge-images='docker rmi $(docker images --quiet --filter "dangling=true")'
 
+# DDG aliases
+[ -f ~/.ddg_aliases ] && source ~/.ddg_aliases
+[ -f ~/.dev_aliases ] && source ~/.dev_aliases
+
 # weeks start on mondays and use cal format
 alias cal='ncal -MC'
 
