@@ -6,7 +6,7 @@ call plug#begin("~/.vim/plugged")
     Plug 'ctrlpvim/ctrlp.vim'
     " File system explorer for Vim
     Plug 'scrooloose/nerdtree'
-    Plug 'ryanoasis/vim-devicons'
+    "Plug 'ryanoasis/vim-devicons'
     " Highlight whitespace/strip it
     Plug 'ntpeters/vim-better-whitespace'
     " Ease navigation with vim motions
@@ -23,6 +23,8 @@ call plug#begin("~/.vim/plugged")
     Plug 'MaxMEllon/vim-jsx-pretty'
     " Go development plugin
     Plug 'fatih/vim-go'
+    " Airline
+    Plug 'vim-airline/vim-airline'
 call plug#end()
 
 " syntax highlighting
@@ -48,9 +50,9 @@ set smartindent
 set scrolloff=3
 
 " 2 space tabs
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 " incremental search, case insensitive when using lower
@@ -130,9 +132,9 @@ map Q :q
 set pastetoggle=<F9>
 
 " powerline config
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
+"python3 from powerline.vim import setup as powerline_setup
+"python3 powerline_setup()
+"python3 del powerline_setup
 " Always show statusline
 set laststatus=2
 " Use 256 colors
@@ -197,7 +199,8 @@ nnoremap <silent> çww :call WindowSwap#EasyWindowSwap()<CR>
 " Force usage of the old regex engine
  set re=1
 
- " CoC
+" CoC
+let g:coc_disable_startup_warning = 1
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-tsserver',
@@ -234,13 +237,13 @@ endfunction
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()
 
-" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
-" position. Coc only does snippet and additional edit on confirm.
-if exists('*complete_info')
-  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
-else
-  imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-endif
+"" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
+"" position. Coc only does snippet and additional edit on confirm.
+"if exists('*complete_info')
+"  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+"else
+"  imap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+"endif
 
 " Diagnostics
 nmap <silent> g, <Plug>(coc-diagnostic-prev)
