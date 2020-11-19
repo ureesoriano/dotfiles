@@ -20,7 +20,7 @@ zmodule termtitle
 # Exposes git repository status information to prompts.
 zmodule git-info
 # theme: https://github.com/ureesoriano/zsh-ubuntu-with-vitamins-zim-theme
-zmodule deepthought
+zmodule ubuntu-with-vitamins
 
 # Additional completion definitions for Zsh.
 zmodule zsh-users/zsh-completions

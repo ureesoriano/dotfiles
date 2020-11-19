@@ -9,7 +9,7 @@ function install_essentials {
     net-tools \
     wine-stable \
     curl \
-    openvpn
+    zsh
 }
 
 function install_node {
@@ -88,8 +88,20 @@ function install_docker_compose {
     -o /etc/bash_completion.d/docker-compose
 }
 
+function setup_zsh {
+  curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+
+  # set zsh as default shell
+  chsh -s $(which zsh)
+
+  # install fzf
+  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install
+}
+
 install_essentials
 install_node
 vim_setup
 install_docker
 install_docker_compose
+install_zsh_zim_fw
