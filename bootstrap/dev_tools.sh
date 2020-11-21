@@ -42,15 +42,6 @@ function vim_setup {
   curl -L \
     https://raw.githubusercontent.com/powerline/fonts/master/UbuntuMono/Ubuntu%20Mono%20derivative%20Powerline.ttf \
     -o ~/.fonts/Ubuntu_mono_powerline/Ubuntu_Mono_derivative_Powerline.ttf
-
-  # Install YouCompleteMe
-  sudo apt install -y \
-    build-essential \
-    cmake \
-    python3-dev
-  sudo npm i -g typescript
-  cd ~/.vim/plugged/YouCompleteMe
-  python3 install.py --ts-completer
 }
 
 function install_docker {
