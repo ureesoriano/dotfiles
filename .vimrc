@@ -187,7 +187,8 @@ autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.template
 "nmap <right> <nop>
 "imap <right> <nop>
 
-" Restore EasyMotion config to be triggered by leader
+" EasyMotion config to be triggered by leader
+"map ç <Plug>(easymotion-prefix)
 map ç <Plug>(easymotion-s2)
 let g:EasyMotion_keys = 'abcdefghijklmnopqrstuvwxyz,'
 
