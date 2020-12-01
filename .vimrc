@@ -198,13 +198,14 @@ nnoremap <silent> çww :call WindowSwap#EasyWindowSwap()<CR>
 " Force usage of the old regex engine
  set re=1
 
- " CoC
+" CoC
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-tsserver',
   \ 'coc-vetur',
   \ 'coc-json',
   \ 'coc-yaml',
+  \ 'coc-perl',
   \ ]
 
 " TextEdit might fail if hidden is not set.
