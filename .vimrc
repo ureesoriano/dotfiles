@@ -188,6 +188,8 @@ autocmd BufNewFile * silent! 0r ~/.vim/templates/%:e.template
 "nmap <right> <nop>
 "imap <right> <nop>
 
+let mapleader=','
+
 " EasyMotion config to be triggered by leader
 "map ç <Plug>(easymotion-prefix)
 map ç <Plug>(easymotion-s2)
@@ -203,11 +205,16 @@ nnoremap <silent> çww :call WindowSwap#EasyWindowSwap()<CR>
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-tsserver',
+  \ 'coc-perl',
   \ 'coc-vetur',
   \ 'coc-json',
   \ 'coc-yaml',
-  \ 'coc-perl',
+  \ 'coc-prettier',
   \ ]
+
+" Prettier config
+vmap <Leader>f  <Plug>(coc-format-selected)
+nmap <Leader>f  <Plug>(coc-format-selected)
 
 " TextEdit might fail if hidden is not set.
 set hidden
