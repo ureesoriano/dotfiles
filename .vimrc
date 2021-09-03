@@ -4,6 +4,7 @@ call plug#begin("~/.vim/plugged")
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
     Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     " File system explorer for Vim
     Plug 'scrooloose/nerdtree'
     "Plug 'ryanoasis/vim-devicons'
