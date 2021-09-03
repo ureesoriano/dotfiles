@@ -263,3 +263,13 @@ nmap <silent> gb <C-o>
 
 " Refactor: Symbol renaming
 nmap <F2> <Plug>(coc-rename)
+
+" DDG
+set modeline
+set ruler
+let b:nroff_is_groff = 1
+let g:do_xhtml_mappings = 'true'
+let g:html_tag_case = 'lowercase'
+let g:no_html_tab_mapping = 1
+let g:no_html_toolbar = 'yes'
+
