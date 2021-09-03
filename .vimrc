@@ -264,6 +264,9 @@ nmap <silent> gb <C-o>
 " Refactor: Symbol renaming
 nmap <F2> <Plug>(coc-rename)
 
+" Manual folds
+set foldmethod=manual
+
 " DDG
 set modeline
 set ruler
