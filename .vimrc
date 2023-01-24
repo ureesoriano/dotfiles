@@ -24,6 +24,8 @@ call plug#begin("~/.vim/plugged")
     Plug 'MaxMEllon/vim-jsx-pretty'
     " Go development plugin
     Plug 'fatih/vim-go'
+    " Indentation line guide
+    Plug 'Yggdroot/indentLine'
 call plug#end()
 
 " syntax highlighting
