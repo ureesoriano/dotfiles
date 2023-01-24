@@ -3,8 +3,8 @@ call plug#begin("~/.vim/plugged")
     " Code completion
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Full path fuzzy file, buffer, mru, tag, ... finder for Vim
-    Plug 'ctrlpvim/ctrlp.vim'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
     " File system explorer for Vim
     Plug 'scrooloose/nerdtree'
     "Plug 'ryanoasis/vim-devicons'
@@ -138,25 +138,14 @@ python3 del powerline_setup
 set laststatus=2
 " Use 256 colors
 set t_Co=256
+" set fzf pane at the bottom (also fixes incompatibility w/ powerline 2.7
+" (fixed in future versions))
+let g:fzf_layout = { 'down': '40%' }
 
-" CtrlP config
-set runtimepath^=~/.vim/bundle/ctrlp.vim
-let g:ctrlp_working_path_mode = 'ra'
-" override max files default
-let g:ctrlp_max_files=0
-" jump to file if already open
-let g:ctrlp_switch_buffer = 'Et'
-" open new file in a tab right after the current one
-let g:ctrlp_tabpage_position = 'ac'
-" open new files in a tab
-let g:ctrlp_prompt_mappings = {
-    \ 'AcceptSelection("e")': ['<c-t>'],
-    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
-    \ }
-" Ignore .git and node_modules folders
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|node_modules$\|local$',
-\ }
+" FZF Silver searcher
+map <C-a> :Ag<CR>
+" FZF :Files
+map <C-p> :Files<CR>
 
 " NerdTree config
 map <C-n> :NERDTreeToggle<CR>
